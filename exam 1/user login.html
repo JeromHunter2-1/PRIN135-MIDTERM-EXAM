@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>User login</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1>User login</h1>
+<p>pls enter the name</p>
+<form method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for ="Password">Enter your password<input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+    </label>
+   </fieldset>
+   <div class="login">
+    <div class="obtained">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div ng-class="{ 'alert': success, 'alert-wrong password': flash.type === 'success', 'alert-failed': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+            <div ng-view></div>
+        </div>
+    </div>
+</div>
+
+  <fieldset> 
+    <legend>Forgot Password?</legend>
+   <label for="remember">Remember me:<input id="personal-account" type="radio" name="account-type" class="inline"/> Yes</label> </label>
+   <label for="remember"><input id="personal-account" type="radio" name="account-type" class="inline"/> No </label> </label>
+    
+   <img src="https://fastly.picsum.photos/id/111/1080/720.jpg?hmac=aCd3_vUdlzxtRS7UlPtWXVGM1MZva92J62nx87ocfjc" alt="Car from 60's"/>
+
+   <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+</p>
+<p class="address">123 Free Code Camp Drive</p>
+
+
+
+
+
+
+
+
+</body>
+
+</head>
+</html>
